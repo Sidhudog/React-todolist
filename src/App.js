@@ -1,25 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
-
+import Person from './Person/Person.js';
+import React from 'react';
+import Abc from './Person/Abc.js';
+import Radium from "radium";
 function App() {
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     Hello World
+     <Abc/>
+    
     </div>
   );
 }
 
-export default App;
+export default Radium(App);
