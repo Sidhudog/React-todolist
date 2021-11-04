@@ -15,7 +15,7 @@ const person = (props) => {
 
     
     return (
-        <div style={style} className="Person">
+        <div  className="Person">
             <h1>I am {props.name} and i am {props.age}</h1>
             <p>{props.children}</p>
             <input type="text" onChange={props.changed} value={props.name}></input>
